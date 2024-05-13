@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --dark: #19283B;
+            --light: #B8B9C1;
+        }
+
+        body {
+            margin: 0;
+            font-size: 15px;
+            font-family: Poppins;
+        }
+
+        nav {
+            width: 80%;
+            margin: auto;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            height: 50px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 50px;
+            font-weight: 500;
+        }
+
+        nav ul li a {
+            color: black; 
+            text-decoration: none; 
+        }
+
+        nav ul li.active {
+            color: var(--light);
+        }
+
+        .banner {
+            height: 100vh;
+            position: relative;
+            background-image: conic-gradient(from var(--rotate), var(--dark), var(--light) 60%);
+            margin-top: -50px;
+            z-index: -1;
+            animation: rotateAnimation 6s linear infinite;
+        }
+
+        @keyframes rotateAnimation {
+            from {
+                --rotate: 0deg;
+            }
+            to {
+                --rotate: -360deg;
+            }
+        }
+
+        .banner .content {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            width: 33%;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-weight: 500;
+            font-size: xxx-large;
+        }
+
+        .banner button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            margin: 20px 0;
+            border-radius: 10px;
+            background-color: var(--light);
+            font-weight: bold;
+        }
+
+        .statis {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            color: var(--light);
+        }
+
+        .statis p:nth-child(1) {
+            font-size: x-large;
+        }
+
+        .statis p:nth-child(2) {
+            font-size: xxx-large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="modelos utilizados.html">Modelos utilizados</a></li>
+                <li><a href="informacion.html">Sobre cómo empezó</a></li>
+                <li><a href="Comentario.html">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h1>Nyx 死 </h1>
+            <div class="des">
+                Adéntrate en el cosmos de la moda en Nyx 死! Somos el santuario de los amantes del anime y los devotos del estilo y2k. Con una mezcla única de influencias del anime más vanguardista y la nostalgia de la era y2k, nuestra tienda es un portal hacia un universo estilístico sin límites.
+            </div>
+            <button class="subscribe">Sígueme ahora</button>
+            <div class="statis">
+                <div class="item">
+                    <p>Seguidores</p>
+                    <p>24k</p>
+                </div>
+                <div class="item">
+                    <p>visitas</p>
+                    <p>+7m</p>
+                </div>
+                <div class="item">
+                    <p>Likes</p>
+                    <p>458,3mil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
